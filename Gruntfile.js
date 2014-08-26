@@ -20,6 +20,6 @@ module.exports = function(grunt) {
 
 
   // Default task
-  grunt.registerTask('test', ['clean:debug', 'concat_sourcemap', 'karma:ci']);
+  grunt.registerTask('test', ['clean:debug', 'concurrent:concat_app', 'concurrent:concat_app_dependencies', 'concurrent:concat_test', 'karma:ci']);
   grunt.registerTask('default', ['test']);
 };
