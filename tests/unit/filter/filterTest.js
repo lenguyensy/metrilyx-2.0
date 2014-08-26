@@ -86,9 +86,8 @@ test('Filter: dateTime', function() {
   var testMethodFun = this.$filter(testMethod);
   var testData = [{
     input: [1406333784960],
-    output: 'Sat Dec 11 01:36:00 4653'
+    output: 'Saturday, December 11, 4653 01:36:00'
   }];
-
 
   runTest(testMethod, testMethodFun, testData, equal);
 });
